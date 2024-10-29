@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Tonte - Nos Tondeurs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nos Tondeurs Disponibles dans l'Agglomération Montargoise</h1>
+        <p class="subtitle">Assurez-vous d'avoir une tondeuse et ce qu'il faut pour la faire fonctionner, et on s'occupe du reste !</p>
+    </header>
+
+    <!-- Système de filtre par zone couverte -->
+    <div class="filters">
+        <button onclick="filterBy('Montargis')">Montargis</button>
+        <button onclick="filterBy('Amilly')">Amilly</button>
+        <button onclick="filterBy('Villemandeur')">Villemandeur</button>
+        <button onclick="filterBy('Cepoy')">Cepoy</button>
+        <button onclick="filterBy('Châlette-sur-Loing')">Châlette-sur-Loing</button>
+        <button onclick="filterBy('Pannes')">Pannes</button>
+    </div>
+
+    <section id="tondeurs-list">
+        <div class="tondeur-card" data-zones="Montargis,Amilly,Châlette-sur-Loing,Pannes">
+            <img src="tondeur1.jpg" alt="Photo de Jean" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Jean</h3>
+                <p><strong>Note :</strong> ★★★★☆</p>
+                <p><strong>Prix à l'heure :</strong> 15€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Amilly, Châlette-sur-Loing, Pannes</p>
+                <p><strong>Disponibilités :</strong> Lundi - Vendredi, 8h - 18h</p>
+            </div>
+            <div class="avis">"Jean est très professionnel et ponctuel !"</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+
+        <div class="tondeur-card" data-zones="Montargis,Villemandeur,Cepoy">
+            <img src="tondeur2.jpg" alt="Photo de Marie" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Marie</h3>
+                <p><strong>Note :</strong> ★★★★☆</p>
+                <p><strong>Prix à l'heure :</strong> 18€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Villemandeur, Cepoy</p>
+                <p><strong>Disponibilités :</strong> Mardi - Samedi, 9h - 17h</p>
+            </div>
+            <div class="avis">"Marie fait un travail soigné et est très gentille."</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+
+        <div class="tondeur-card" data-zones="Montargis,Amilly,Pannes">
+            <img src="tondeur3.jpg" alt="Photo de Paul" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Paul</h3>
+                <p><strong>Note :</strong> ★★★★★</p>
+                <p><strong>Prix à l'heure :</strong> 20€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Amilly, Pannes</p>
+                <p><strong>Disponibilités :</strong> Lundi - Jeudi, 10h - 16h</p>
+            </div>
+            <div class="avis">"Paul est très efficace et rapide !"</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+
+        <div class="tondeur-card" data-zones="Montargis,Amilly,Cepoy">
+            <img src="tondeur4.jpg" alt="Photo de Clara" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Clara</h3>
+                <p><strong>Note :</strong> ★★★★☆</p>
+                <p><strong>Prix à l'heure :</strong> 17€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Amilly, Cepoy</p>
+                <p><strong>Disponibilités :</strong> Mercredi - Dimanche, 8h - 15h</p>
+            </div>
+            <div class="avis">"Clara est très fiable et très minutieuse."</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+
+        <div class="tondeur-card" data-zones="Montargis,Châlette-sur-Loing,Pannes">
+            <img src="tondeur5.jpg" alt="Photo de Léa" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Léa</h3>
+                <p><strong>Note :</strong> ★★★★☆</p>
+                <p><strong>Prix à l'heure :</strong> 16€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Châlette-sur-Loing, Pannes</p>
+                <p><strong>Disponibilités :</strong> Mardi - Vendredi, 9h - 16h</p>
+            </div>
+            <div class="avis">"Léa a fait un travail parfait, très satisfaite."</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+
+        <div class="tondeur-card" data-zones="Montargis,Villemandeur,Cepoy">
+            <img src="tondeur6.jpg" alt="Photo de Lucas" class="tondeur-photo">
+            <div class="tondeur-info">
+                <h3>Lucas</h3>
+                <p><strong>Note :</strong> ★★★☆☆</p>
+                <p><strong>Prix à l'heure :</strong> 14€/h</p>
+                <p><strong>Zones couvertes :</strong> Montargis, Villemandeur, Cepoy</p>
+                <p><strong>Disponibilités :</strong> Lundi - Mercredi, 8h - 12h</p>
+            </div>
+            <div class="avis">"Lucas est rapide, un bon service à bon prix."</div>
+            <a href="https://wa.me/33NUMEROTONDEUR" target="_blank" class="whatsapp-btn">Contacter sur WhatsApp</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

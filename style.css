@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #E0FFE0;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filters button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.filters button:hover {
+    background-color: #45A049;
+}
+
+#tondeurs-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.tondeur-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Permet d’ajuster les éléments si nécessaire */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    gap: 15px; /* Espace entre les éléments de la carte */
+}
+
+.tondeur-card:hover {
+    transform: scale(1.02);
+}
+
+.tondeur-photo {
+    width: 100px; /* Augmenter la taille pour une meilleure visibilité */
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.tondeur-info {
+    flex: 1;
+    min-width: 220px;
+}
+
+.tondeur-info h3 {
+    font-size: 1.3em;
+    margin: 0;
+    color: #333;
+}
+
+.tondeur-info p {
+    margin: 5px 0;
+    font-size: 1em; /* Taille augmentée pour meilleure lisibilité */
+    color: #555;
+}
+
+.whatsapp-btn {
+    position: static;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA853;
+}
+
+.avis {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+    left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 0.9em;
+    width: 90%;
+    color: #333;
+    max-height: 150px; /* Limiter la hauteur des avis */
+    overflow-y: auto;  /* Permettre le défilement des avis s'ils sont trop longs */
+}
+
+
+.tondeur-card:hover .avis {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .tondeur-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centre le texte pour meilleure apparence sur mobile */
+    }
+
+    .whatsapp-btn {
+        margin-top: 15px; /* Ajoute un espace au-dessus du bouton pour les petits écrans */
+    }
+
+    .tondeur-info {
+        min-width: auto;
+        width: 100%; /* Prend toute la largeur de la carte sur mobile */
+    }
+
+    .tondeur-photo {
+        margin-bottom: 10px; /* Ajoute de l'espace sous la photo pour plus de confort visuel */
+    }
+}
